@@ -36,8 +36,9 @@ function local_help_center_before_footer() {
     global $PAGE, $OUTPUT;
 
     $config = get_config('local_help_center');
+    $excluded = ['embedded'];
 
-    if (!empty($config->enabled)) {
+    if (!empty($config->enabled) && !in_array($PAGE->pagelayout, $excluded)) {
         $PAGE->requires->js_call_amd('local_help_center/help-block', 'init');
 
         echo $OUTPUT->render_from_template(
