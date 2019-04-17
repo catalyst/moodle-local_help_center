@@ -32,4 +32,5 @@ $string['enabled'] = 'Enabled?';
 $string['enableddesc'] = 'When enabled, the help center will be displayed on the site.';
 $string['html'] = 'Help center HTML';
 $string['htmldesc'] = 'Whatever HTML you add to this textarea will be displayed as help center content.';
-
+// Privacy.
+$string['privacy:metadata'] = 'This plugin does not store personal data.';
